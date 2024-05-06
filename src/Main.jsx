@@ -4,9 +4,11 @@ import About from './components/About'
 import Header from './components/Header'
 import Home from './components/Home'
 import Services from './components/Services'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 const Main = () => {
   return (
-    <div className=''>
+    <div className='relative bg-black'>
         <Header />
         <Element name='home'>
             <Home />
@@ -17,6 +19,10 @@ const Main = () => {
         <Element name='services'>
             <Services />
         </Element>
+        <Element name='contact'>
+            <Contact />
+        </Element>
+        <Footer />
     </div>
   )
 }
