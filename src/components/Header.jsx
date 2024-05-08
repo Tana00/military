@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import { Link } from 'react-scroll'
-const Header = () => {
+const Header = ({setOpenForm}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [headerColor, setHeaderColor] = useState('bg-transparent');
 
@@ -92,7 +92,9 @@ const Header = () => {
           <button className=" text-white px-5 py-2 rounded-md hover:border">
             Login
           </button>
-          <button className="border border-white text-white px-5 py-2 rounded-md hover:bg-gray-200 hover:text-black">
+          <button 
+            onClick={() => setOpenForm(true)}
+          className="border border-white text-white px-5 py-2 rounded-md hover:bg-gray-200 hover:text-black">
             Sign Up
           </button>
         </div>

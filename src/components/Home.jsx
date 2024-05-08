@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import gsap from "gsap";
+
 import {
   FaUserPlus,
   FaIdCard,
@@ -8,7 +9,7 @@ import {
 } from "react-icons/fa";
 import { useGSAP } from "@gsap/react";
 
-const Home = () => {
+const Home = ({setOpenForm}) => {
   // implement gsap stagger method
   const boxRefs = useRef([]);
 
@@ -67,6 +68,7 @@ const Home = () => {
         <button
           ref={buttonRef}
           id="btn"
+          onClick={() => setOpenForm(true)}
           className="bg-white text-gray-800 px-8 py-4 rounded-lg font-bold text-xl mt-4"
         >
           Get Started
