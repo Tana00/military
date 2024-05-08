@@ -32,7 +32,8 @@ function Sidebar(props) {
   let variantChange = "0.2s linear";
   // verifies if routeName is the one active (in browser input)
   const activeRoute = (routeName) => {
-    return location.pathname === routeName ? "active" : "";
+    console.log(location.pathname, routeName);
+    return "/admin" === routeName ? "active" : "";
   };
 
   const { sidebarVariant } = props;
@@ -73,7 +74,7 @@ function Sidebar(props) {
         );
       }
       return (
-        <NavLink to={prop.layout + prop.path} key={key}>
+        <NavLink to={prop.layout} key={key}>
           {activeRoute(prop.layout + prop.path) === "active" ? (
             <Button
               boxSize="initial"
@@ -92,8 +93,8 @@ function Sidebar(props) {
                 sm: "10px",
                 xl: "16px",
               }}
-              py="12px"
-              borderRadius="15px"
+              py="10px"
+              borderRadius="10px"
               _hover="none"
               w="100%"
               _active={{
@@ -110,8 +111,8 @@ function Sidebar(props) {
                   <Icon>{prop.icon}</Icon>
                 ) : (
                   <IconBox
-                    bg="white"
-                    color="blue"
+                    bg="#4B5320"
+                    color="white"
                     h="30px"
                     w="30px"
                     me="12px"
@@ -158,11 +159,11 @@ function Sidebar(props) {
             >
               <Flex>
                 {typeof prop.icon === "string" ? (
-                  <Icon>{prop.icon}</Icon>
+                  <Icon color={"#4B5320"}>{prop.icon}</Icon>
                 ) : (
                   <IconBox
                     bg={inactiveBg}
-                    color="blue.500"
+                    color="#4B5320"
                     h="30px"
                     w="30px"
                     me="12px"

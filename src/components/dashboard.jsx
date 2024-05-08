@@ -43,8 +43,8 @@ import { productsData, partnersData } from "../variables/general";
 
 export default function Dashboard() {
   // Chakra Color Mode
-  const iconBlue = useColorModeValue("blue.500", "blue.500");
-  const iconBoxInside = useColorModeValue("white", "white");
+  const iconBlue = useColorModeValue("white", "blue.500");
+  const iconBoxInside = useColorModeValue("#4B5320", "white");
   const textColor = useColorModeValue("gray.300", "white");
   const tableRowColor = useColorModeValue("#F7FAFC", "navy.900");
   const borderColor = useColorModeValue("gray.200", "gray.600");

@@ -16,32 +16,6 @@ const DashboardLayout = (props) => {
   // states and functions
   const [fixed, setFixed] = useState(false);
 
-  const getRoute = () => {
-    return window.location.pathname !== "/admin";
-  };
-
-  const getRoutes = (routes) => {
-    return routes.map((prop, key) => {
-      if (prop.collapse) {
-        return getRoutes(prop.views);
-      }
-      if (prop.category === "account") {
-        return getRoutes(prop.views);
-      }
-      if (prop.layout === "/admin") {
-        return (
-          <Route
-            path={prop.layout + prop.path}
-            element={prop.component}
-            key={key}
-          />
-        );
-      } else {
-        return null;
-      }
-    });
-  };
-
   return (
     <Box>
       <Box

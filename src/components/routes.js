@@ -14,7 +14,7 @@ import {
 
 var dashRoutes = [
   {
-    path: "/",
+    path: "",
     name: "Dashboard",
     icon: <HomeIcon color="inherit" />,
     component: Dashboard,
@@ -39,7 +39,7 @@ var dashRoutes = [
     name: "RTL",
     icon: <SupportIcon color="inherit" />,
     component: Dashboard,
-    layout: "/rtl",
+    layout: "/admin",
   },
   {
     name: "ACCOUNT PAGES",
@@ -60,14 +60,14 @@ var dashRoutes = [
         name: "Branches",
         icon: <DocumentIcon color="inherit" />,
         component: Dashboard,
-        layout: "/auth",
+        layout: "/admin",
       },
       {
         path: "/signup",
         name: "Reports",
         icon: <RocketIcon color="inherit" />,
         component: Dashboard,
-        layout: "/auth",
+        layout: "/admin",
       },
     ],
   },
