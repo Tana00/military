@@ -1,41 +1,39 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
- 
+
 const svgToDataUri = require("mini-svg-data-uri");
- 
+
 const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
 
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
-         'primary-color': '#23D26B',
-          'secondary-color': '#025159',
-          'primary-yellow': '#e99900',
+        "primary-color": "#23D26B",
+        "secondary-color": "#025159",
+        "primary-yellow": "#e99900",
+        // black: "#1a202c",
       },
       fontFamily: {
-        sans: ['Duru Sans', 'sans-serif'],
-        nueu: ['Bebas Neue', 'sans-serif'],
+        sans: ["Duru Sans", "sans-serif"],
+        nueu: ["Bebas Neue", "sans-serif"],
       },
       backgroundImage: {
         pattern: "url('/pattern.png')",
-       
       },
       screens: {
-        xs: '400px',
-        '3xl': '1680px',
-        '4xl': '2200px',
+        xs: "400px",
+        "3xl": "1680px",
+        "4xl": "2200px",
       },
       maxWidth: {
-        '10xl': '1512px',
+        "10xl": "1512px",
       },
       borderRadius: {
-        '5xl': '40px',
+        "5xl": "40px",
       },
     },
   },
@@ -71,7 +69,7 @@ function addVariablesForColors({ addBase, theme }) {
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });

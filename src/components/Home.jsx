@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
 import {
   FaUserPlus,
@@ -9,6 +10,7 @@ import {
 import { useGSAP } from "@gsap/react";
 
 const Home = () => {
+  let navigate = useNavigate();
   // implement gsap stagger method
   const boxRefs = useRef([]);
 
@@ -46,7 +48,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="min-h-screen w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex flex-col items-center justify-center md:justify-end overflow-clip">
+    <div className="min-h-screen w-full dark:bg-black bg-white dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex flex-col items-center justify-center md:justify-end overflow-clip">
       {/* <div className="blury"></div> */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-opacity-35"></div>
       <div className="flex flex-col justify-center items-center relative top-10 lg:top-10 4xl:-top-10  p-4">
@@ -65,6 +67,7 @@ const Home = () => {
           Providing financial assistance to our heroes in their time of need.
         </p>
         <button
+          onClick={() => navigate("/signup")}
           ref={buttonRef}
           id="btn"
           className="bg-white text-gray-800 px-8 py-4 rounded-lg font-bold text-xl mt-4"

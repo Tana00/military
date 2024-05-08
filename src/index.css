@@ -2,44 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    --background: hsl(0, 0%, 7%);
-    --primary: hsl(0, 0%, 7%);
-    --primaryBg: hsla(155, 100%, 65%, 1%);
+:root {
+  --background: #1a202c;
+  --primary: #1a202c;
+  --primaryBg: #1a202c;
 }
 
-.abouut{
-    background: var(--background) ;
+.abouut {
+  background: var(--background);
 }
 
 .blury {
-    height: 32rem;
-    width: 72rem;
-    background-color: var(--primary);
-    opacity: 0.5;
-    filter: blur(200px);
-    border-radius: 100px;
-    z-index: 0;
-    position: absolute;
-  }
+  height: 32rem;
+  width: 72rem;
+  background-color: var(--primary);
+  opacity: 0.5;
+  filter: blur(200px);
+  border-radius: 100px;
+  z-index: 0;
+  position: absolute;
+}
 
-  .service-card {
-    margin-top: 20px;
-    position: relative;
-    padding: 25px;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    height: 300px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  /* .service-card::before {
+.service-card {
+  margin-top: 20px;
+  position: relative;
+  padding: 25px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* .service-card::before {
   
     content: "";
     position: absolute;
