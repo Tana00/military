@@ -64,28 +64,28 @@ const Header = ({setOpenForm}) => {
         </svg>
       </button>
       {/* Navigation Links */}
-      <nav className={`fixed right-0 top-0 h-full w-64 z-50 bg-black text-white transition-transform duration-200 ease-in-out transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} lg:translate-x-0 lg:static lg:h-auto lg:bg-transparent lg:w-auto lg:flex lg:items-center`}>
+      <nav className={`fixed right-0 top-0 h-full w-64 z-50 flex justify-center bg-black text-white transition-transform duration-200 ease-in-out transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} lg:translate-x-0 lg:static lg:h-auto lg:bg-transparent lg:w-auto lg:flex lg:items-center`}>
         <button
           className="block lg:hidden focus:outline-none bg-white text-2xl rounded-full w-12 h-12 text-black font-bold absolute top-4 right-4"
           onClick={toggleMenu}
         >
          x
         </button>
-        <ul className="text-center lg:flex lg:space-x-4 lg:mx-auto lg:my-0 lg:py-0 flex md:flex-row flex-col justify-center">
+        <ul className="text-center mt-12 md:mt-0 lg:flex lg:space-x-4 lg:mx-auto lg:my-0 lg:py-0 flex md:flex-row flex-col justify-center">
           {links.map((link) => (
-            <li key={link.id} className='mt-20 md:mt-0'>
+            <li key={link.id} className='mt-5 md:mt-0'>
               <Link
                 to={link.to}
                 smooth={true}
                 duration={500}
-                className="block py-4 px-2 hover:text-gray-400 text-5xl md:text-lg cursor-pointer"
+                className="block py-4 px-2 hover:text-gray-400 text-3xl md:text-lg cursor-pointer"
                 onClick={toggleMenu}
               >
                 {link.name}
               </Link>
             </li>
           ))}
-        <div className="flex flex-col lg:flex-row justify-center lg:space-x-4 lg:items-center">
+        <div className="flex flex-col lg:flex-row justify-center items-center lg:space-x-4 lg:items-center">
           <button className=" text-white px-5 py-2 rounded-md hover:border">
             Login
           </button>
