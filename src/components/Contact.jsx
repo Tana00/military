@@ -18,7 +18,7 @@ const Contact = () => {
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-">
           Contact Us
         </h2>
-        <p className="text-center mt-2">
+        <p className="text-center mt-2 p-2">
           Have a question or need assistance? Reach out to us using the form
         </p>
       </div>
