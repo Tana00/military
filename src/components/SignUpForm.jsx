@@ -5,7 +5,7 @@ const SignUpForm = ({ register, handleSubmit, errors, onSubmit, password }) => {
     <div className="flex h-full justify-center items-center">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col space-y-4 w-full"
+        className="flex flex-col space-y-6 w-full"
       >
         <label className="flex flex-col">
           Full Name:
@@ -88,7 +88,7 @@ const SignUpForm = ({ register, handleSubmit, errors, onSubmit, password }) => {
         </label>
         <button
           type="submit"
-          className="p-2 mt-5 bg-slate-800 text-white rounded"
+          className="p-2 mt-8 bg-slate-800 text-white rounded"
         >
           Sign Up
         </button>

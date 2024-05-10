@@ -73,7 +73,7 @@ const Header = ({setOpenForm}) => {
         </button>
         <ul className="text-center lg:flex lg:space-x-4 lg:mx-auto lg:my-0 lg:py-0 flex md:flex-row flex-col justify-center">
           {links.map((link) => (
-            <li key={link.id}>
+            <li key={link.id} className='mt-20 md:mt-0'>
               <Link
                 to={link.to}
                 smooth={true}
@@ -85,19 +85,19 @@ const Header = ({setOpenForm}) => {
               </Link>
             </li>
           ))}
-        </ul>
-        {/*  buttons to login and sign up */}
-      </nav>
-        <div className="flex flex-col lg:flex-row lg:space-x-4 lg:items-center">
+        <div className="flex flex-col lg:flex-row justify-center lg:space-x-4 lg:items-center">
           <button className=" text-white px-5 py-2 rounded-md hover:border">
             Login
           </button>
           <button 
             onClick={() => setOpenForm(true)}
-          className="border border-white text-white px-5 py-2 rounded-md hover:bg-gray-200 hover:text-black">
+          className="border border-white w-max text-white px-5 py-2 rounded-md hover:bg-gray-200 hover:text-black">
             Sign Up
           </button>
         </div>
+        </ul>
+        {/*  buttons to login and sign up */}
+      </nav>
     </div>
   </header>
   );

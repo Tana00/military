@@ -13,10 +13,10 @@ const SignUp = ({setOpenForm, openForm}) => {
   };
 
   return (
-    <div className='fixed inset-0 z-[999] h-screen bg-black bg-opacity-80 flex items-center justify-center'>
-        <div className='bg-white p-4 w-full min-h-[90vh] md:w-1/2 lg:w-1/3 '>
+    <div className='fixed inset-0 z-[999] h-screen bg-black bg-opacity-80 flex items-center justify-center p-2'>
+        <div className='bg-white rounded-md p-4 w-full h-[90vh] md:w-3/5 lg:w-1/3 '>
             <button
-                className='absolute z-40 top-0 right-0 p-4 bg-white text-slate-800 rounded-full focus:outline-none'
+                className='absolute z-40 top-10 right-10 p-4 bg-white text-slate-800 rounded-full focus:outline-none'
                 onClick={handleClose}
             >
                 <svg
