@@ -56,7 +56,7 @@ const Home = ({setOpenForm}) => {
           id="headline"
           className="text-5xl leading-[80px] text-center sm:text-6xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-700 py-2 hover:from-neutral-200 hover:to-neutral-800 "
         >
-          Lending Platform for Nigerian Military
+          Lending Platform for Military Personnel
         </p>
         <p
           ref={subheadlineRef}
