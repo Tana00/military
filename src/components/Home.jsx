@@ -47,7 +47,7 @@ const Home = ({setOpenForm}) => {
   }, []);
 
   return (
-    <div className="min-h-screen w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex flex-col items-center justify-center md:justify-end overflow-clip">
+    <div className="min-h-screen w-full bg-black   dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex flex-col items-center justify-center md:justify-end overflow-clip">
       {/* <div className="blury"></div> */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-opacity-35"></div>
       <div className="flex flex-col justify-center items-center relative top-10 lg:top-10 4xl:-top-10  p-4">
@@ -74,7 +74,7 @@ const Home = ({setOpenForm}) => {
           Get Started
         </button>
       </div>
-      <div className="w-full mt-8 md:mt-0 md:flex flex-col md:flex-row justify-evenly items-end px-4 gap-4 space-x-4">
+      <div className="w-full hidden mt-8 md:mt-0 md:flex flex-col md:flex-row justify-evenly items-end px-4 gap-4 space-x-4">
         <div
           ref={(el) => (boxRefs.current[0] = el)}
           id="box-1"
