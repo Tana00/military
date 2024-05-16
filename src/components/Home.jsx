@@ -74,7 +74,7 @@ const Home = ({setOpenForm}) => {
           Get Started
         </button>
       </div>
-      <div className="w-full hidden md:flex flex-col md:flex-row justify-evenly items-end px-4 gap-4 space-x-4">
+      <div className="w-full mt-8 md:mt-0 md:flex flex-col md:flex-row justify-evenly items-end px-4 gap-4 space-x-4">
         <div
           ref={(el) => (boxRefs.current[0] = el)}
           id="box-1"

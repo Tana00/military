@@ -23,7 +23,32 @@ const Contact = () => {
         </p>
       </div>
       <div className="flex flex-col md:flex-row gap-2 justify-center items-center ">
-      <div className="w-full p-5 md:p-10">
+      
+        <div
+          className="w-full p-5 md:p-10 "
+          style={{
+            backgroundImage: "url('https://placeimg.com/640/480/tech')",
+          }}
+        >
+          <h2 className="text-2xl md:text-4xl mt-4 md:mt-0 mb-5">Our Branch Office</h2>
+          <div className=" flex flex-col gap-8 mt-5 bg-white bg-opacity-90">
+            <div className="flex items-center gap-4">
+              <FaMap className=" text-2xl" />
+              <p className="text-lg ">123 Main Street, Lagos, Nigeria</p>
+            </div>
+            <div className="flex items-center gap-4">
+              <FaPhone className=" text-2xl" />
+              <p className="text-lg ">+234 123 456 7890</p>
+            </div>
+            <div className="flex items-center gap-4">
+              <FaEnvelope className=" text-2xl" />
+              <p className="text-lg ">
+                <a href="mailto:"> armedforceloan@example.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="w-full p-5 md:p-10">
           <h2 className="text-2xl md:text-4xl mt-4 md:mt-0 mb-5">Get In Touch</h2>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="mb-5">
@@ -83,31 +108,6 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <div
-          className="w-full p-5 md:p-10 "
-          style={{
-            backgroundImage: "url('https://placeimg.com/640/480/tech')",
-          }}
-        >
-          <h2 className="text-2xl md:text-4xl mt-4 md:mt-0 mb-5">Our Branch Office</h2>
-          <div className=" flex flex-col gap-8 mt-5 bg-white bg-opacity-90">
-            <div className="flex items-center gap-4">
-              <FaMap className=" text-2xl" />
-              <p className="text-lg ">123 Main Street, Lagos, Nigeria</p>
-            </div>
-            <div className="flex items-center gap-4">
-              <FaPhone className=" text-2xl" />
-              <p className="text-lg ">+234 123 456 7890</p>
-            </div>
-            <div className="flex items-center gap-4">
-              <FaEnvelope className=" text-2xl" />
-              <p className="text-lg ">
-                <a href="mailto:"> armedforceloan@example.com</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        
       </div>
     </div>
   );

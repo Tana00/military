@@ -39,25 +39,36 @@
     text-align: center;
   }
   
-  /* .service-card::before {
-  
-    content: "";
-    position: absolute;
-    top: -5px;
-    right: -10px;
-    border-top: 80px solid rgb(1, 48, 7);
-    border-left: 80px solid transparent;
- 
-    width: 30px;
+  .service-card:hover{
+    background-color: var(--background);
+    color: white;
+    transition: ease-in-out 0.5s;
+
   }
 
-    .service-card::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: -10px;
-        border-bottom: 80px solid rgb(16, 16, 16);
-        border-right: 80px solid transparent;
-       
-        width: 30px;
-    } */
+  /*  slide-in from the left and right animation for the service card */
+  .service-cards:nth-child(odd) {
+    animation: slide-in-left 0.5s ease-out;
+  }
+
+  .service-cards:nth-child(even) {
+    animation: slide-in-right 0.5s ease-out;
+  }
+
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-in-right {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
