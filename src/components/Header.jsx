@@ -64,7 +64,7 @@ const Header = ({setOpenForm}) => {
         </svg>
       </button>
       {/* Navigation Links */}
-      <nav className={`fixed right-0 top-0 h-full w-64 z-50 flex justify-center bg-black text-white transition-transform duration-200 ease-in-out transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} lg:translate-x-0 lg:static lg:h-auto lg:bg-transparent lg:w-auto lg:flex lg:items-center`}>
+      <nav className={`fixed right-0 top-0 h-full w-64 z-50 flex justify-center bg-[#0c2b2f] text-white transition-transform duration-200 ease-in-out transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} lg:translate-x-0 lg:static lg:h-auto lg:bg-transparent lg:w-auto lg:flex lg:items-center`}>
         <button
           className="block lg:hidden focus:outline-none bg-white text-2xl rounded-full w-12 h-12 text-black font-bold absolute top-4 right-4"
           onClick={toggleMenu}
