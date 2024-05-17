@@ -12,7 +12,9 @@ const Main = () => {
 
 
   return (
-    <div className='relative bg-secondary-color'>
+    <div className=" dark:bg-[#0c2b2f] bg-[#0c2b2f] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative overflow-clip">
+      <div className="absolute z-[-10] pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-[#0c2b2f] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-opacity-35"></div>
+      
         {openForm && <SignUp 
             setOpenForm={setOpenForm}
             openForm={openForm}
