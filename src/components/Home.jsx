@@ -47,21 +47,22 @@ const Home = ({setOpenForm}) => {
   }, []);
 
   return (
-    <div className="min-h-screen w-full bg-black   dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex flex-col items-center justify-center md:justify-end overflow-clip">
+    <div className="min-h-screen w-full dark:bg-black bg-[#0c2b2f] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex flex-col items-center justify-center md:justify-end overflow-clip">
       {/* <div className="blury"></div> */}
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-opacity-35"></div>
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-[#0c2b2f] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-opacity-35"></div>
       <div className="flex flex-col justify-center items-center relative top-10 lg:top-10 4xl:-top-10  p-4">
         <p
           ref={headlineRef}
           id="headline"
-          className="text-5xl leading-[80px] text-center sm:text-6xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-700 py-2 hover:from-neutral-200 hover:to-neutral-800 "
+          className="text-5xl leading-[80px] text-center sm:text-6xl font-bold relative z-20  py-2 text-neutral-200"
         >
           Lending Platform for Military Personnel
         </p>
         <p
           ref={subheadlineRef}
           id="subheadline"
-          className="text-base text-center sm:text-xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 to-neutral-200 py-2"
+          className="text-base text-center sm:text-xl font-bold relative z-20  dark:text-neutral-300 text-neutral-200
+          py-2"
         >
           Providing financial assistance to our heroes in their time of need.
         </p>
@@ -69,7 +70,8 @@ const Home = ({setOpenForm}) => {
           ref={buttonRef}
           id="btn"
           onClick={() => setOpenForm(true)}
-          className="bg-white text-gray-800 px-8 py-4 rounded-lg font-bold text-xl mt-4"
+          className="bg-primary-color text-neutral-200
+            px-8 py-4 rounded-lg font-bold text-xl mt-4"
         >
           Get Started
         </button>
@@ -78,7 +80,7 @@ const Home = ({setOpenForm}) => {
         <div
           ref={(el) => (boxRefs.current[0] = el)}
           id="box-1"
-          className="p-4 w-full md:w-1/5 h-96 rounded-sm bg-gradient-to-b from-neutral-900 to-black flex flex-col justify-center items-center text-center border border-neutral-800"
+          className="p-4 w-full md:w-1/5 h-96 rounded-sm bg-secondary-color bg-opacity-70 flex flex-col justify-center items-center text-center border border-slate-600"
         >
           <FaUserPlus className="text-6xl text-center text-neutral-300 mb-4" />
           <p className="text-lg text-center text-neutral-300">
@@ -88,7 +90,7 @@ const Home = ({setOpenForm}) => {
         <div
           ref={(el) => (boxRefs.current[1] = el)}
           id="box-2"
-          className="flex flex-col p-4 w-full md:w-1/5 h-72 rounded-sm bg-gradient-to-b from-neutral-900 to-black  justify-center items-center text-center border border-neutral-800"
+          className="flex flex-col p-4 w-full md:w-1/5 h-72 rounded-sm bg-secondary-color bg-opacity-70  justify-center items-center text-center border border-slate-600"
         >
           <FaIdCard className="text-6xl text-center text-neutral-300 mb-4" />
           <p className="text-lg text-center text-neutral-300">KYC Validation</p>
@@ -96,7 +98,7 @@ const Home = ({setOpenForm}) => {
         <div
           ref={(el) => (boxRefs.current[3] = el)}
           id="box-4"
-          className="flex flex-col p-4 w-full md:w-1/5 h-72 rounded-sm bg-gradient-to-b from-neutral-900 to-black justify-center items-center text-center border border-neutral-800"
+          className="flex flex-col p-4 w-full md:w-1/5 h-72 rounded-sm bg-secondary-color bg-opacity-70 justify-center items-center text-center border border-slate-600"
         >
           <FaHandHoldingUsd className="text-6xl text-center text-neutral-300 mb-4" />
           <p className="text-lg text-center text-neutral-300">
@@ -106,7 +108,7 @@ const Home = ({setOpenForm}) => {
         <div
           ref={(el) => (boxRefs.current[4] = el)}
           id="box-5"
-          className="flex flex-col p-4 w-full md:w-1/5 h-96 rounded-sm bg-gradient-to-b from-neutral-900 to-black justify-center items-center text-center border border-neutral-800"
+          className="flex flex-col p-4 w-full md:w-1/5 h-96 rounded-sm bg-secondary-color bg-opacity-70 justify-center items-center text-center border border-slate-600"
         >
           <FaChartLine className="text-6xl text-center text-neutral-300 mb-4" />
           <p className="text-lg text-center text-neutral-300">

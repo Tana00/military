@@ -13,12 +13,12 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className=" min-h-screen bg-white">
+    <div id="contact" className=" min-h-screen bg-secondary-color text-slate-200">
       <div className="flex flex-col justify-center items-center">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-">
+        <h2 className="text-slate-200 text-4xl font-nueu md:text-5xl lg:text-6xl font-bold mt-6 mb-2">
           Contact Us
         </h2>
-        <p className="text-center mt-2 p-2">
+        <p className="text-center p-2">
           Have a question or need assistance? Reach out to us using the form
         </p>
       </div>
@@ -31,7 +31,7 @@ const Contact = () => {
           }}
         >
           <h2 className="text-2xl md:text-4xl mt-4 md:mt-0 mb-5">Our Branch Office</h2>
-          <div className=" flex flex-col gap-8 mt-5 bg-white bg-opacity-90">
+          <div className=" flex flex-col gap-8 mt-5">
             <div className="flex items-center gap-4">
               <FaMap className=" text-2xl" />
               <p className="text-lg ">123 Main Street, Lagos, Nigeria</p>
@@ -101,7 +101,7 @@ const Contact = () => {
               )}
             </div>
             <button
-              className="w-full p-4 bg-black text-white rounded"
+              className="w-full p-4 bg-primary-color text-white rounded"
               type="submit"
             >
               Submit

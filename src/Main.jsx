@@ -12,7 +12,7 @@ const Main = () => {
 
 
   return (
-    <div className='relative bg-black'>
+    <div className='relative bg-secondary-color'>
         {openForm && <SignUp 
             setOpenForm={setOpenForm}
             openForm={openForm}

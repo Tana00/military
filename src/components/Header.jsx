@@ -3,16 +3,16 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll'
 const Header = ({setOpenForm}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [headerColor, setHeaderColor] = useState('bg-transparent');
+  const [headerColor, setHeaderColor] = useState('bg-transparent text-white');
 
   useEffect(() => {
     const changeHeaderColor = () => {
       const offset = window.scrollY;
       const target = document.getElementById('target-section').offsetTop;
       if (offset > target) {
-        setHeaderColor('bg-black text-white');
+        setHeaderColor('bg-secondary-color text-white');
       } else {
-        setHeaderColor('bg-transparent text-white');
+        setHeaderColor('bg-secondary-color text-white');
       }
     };
 

@@ -1,53 +1,65 @@
-import React from 'react'
+import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import img1 from "../assets/female.png";
+import img2 from "../assets/handshake.jpg";
 const About = () => {
-
-    // implement gsap stagger method
-    const targetRef = React.useRef(null);
-    useGSAP(() => {
-      gsap.fromTo(
-        targetRef.current,
-        {
-          y: 100,
-          opacity: 0,
-        },
-        {
-          duration: 1,
-          y: 0,
-          opacity: 1,
-          ease: "power3.out",
-        }
-      );
-    }, []);
-
-
-
   return (
-    <div id='target-section' className='min-h-screen w-full flex flex-col justify-center items-center text-center text-7xl bg-white text-white'>
-
-          <h2 className="text-4xl md:text-7xl font-bold my-4 text-black">About Us</h2>
-       <div      ref={targetRef} id='target-container' className="container mx-auto px-4 w-11/12 md:w-4/5 h-[70vh] rounded-3xl  bg-neutral-900 flex flex-col mt-4 md:mt-0 py-4 md:p-5">
-
-        <div 
-   
-        id='target-item' className=" mx-auto  flex flex-col gap-4 justify-center items-center w-full h-full">
-          <div className="flex flex-col w-full md:w-4/5 gap-4 justify-center items-start md:items-center">
-
-          <p className="text-base md:text-lg text-slate-200">
-            ArmedForcesLoan is a dedicated lending platform designed to provide financial support and assistance to military personnel and paramilitary forces in Nigeria. 
-          </p>
-          <p className="mt-4 text-base md:text-lg text-slate-200">
-            With ArmedForcesLoan, military personnel and paramilitary forces can access a range of loan products, including asset financing, fixed loans, salary advances, and loan buyback options. 
-          </p>
-          <p className="mt-4 text-base md:text-lg text-slate-200">
-            At ArmedForcesLoan, we are committed to serving those who serve our nation. Join us in our mission to provide financial empowerment and support to our heroes in uniform.
-          </p>
+    <div
+      id="target-section"
+      className="min-h-screen w-full flex flex-col justify-center items-center text-center text-7xl bg-white p-2 md:p-4 "
+    >
+      <h2 className="text-4xl md:text-7xl font-bold my-4 text-slate-800">
+        
+      </h2>
+      <div className="w-full h-full flex flex-col gap-4 md:gap-6 px-4">
+        <div className="flex flex-col md:flex-row gap-5 justify-around">
+          <div className="w-full md:w-2/5 rounded-md">
+            <img
+              src={img1}
+              alt="female"
+              className="w-full h-full object-contain bg-secondary-color rounded-md "
+            />
+          </div>
+          {/*  some text */}
+          <div className="w-full md:w-1/2 flex flex-col justify-center items-center">
+            <h2 className="text-2xl md:text-5xl font-nueu mt-4 md:mt-0 mb-5">
+              What We Do
+            </h2>
+            <p className="text-lg">
+              ArmedForcesLoan is a dedicated lending platform designed to
+              provide financial support and assistance to military personnel and
+              paramilitary forces.
+            </p>
+            <p className="text-lg">
+              With ArmedForcesLoan, military personnel and paramilitary forces
+              can access a range of loan products, including asset financing,
+              fixed loans, salary advances, and loan buyback options.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col-reverse md:flex-row gap-5 justify-around">
+          <div className="w-full md:w-1/2 flex flex-col justify-center items-center">
+            <h2 className="text-2xl font-nueu md:text-5xl mt-4 md:mt-0 mb-5">
+              Our Vision
+            </h2>
+            <p className="text-lg">
+              At ArmedForcesLoan, we are committed to serving those who serve
+              our nation. Join us in our mission to provide financial
+              empowerment and support to our heroes in uniform.
+            </p>
+          </div>
+          <div className="w-full md:w-2/5 rounded-md">
+            <img
+              src={img2}
+              alt="handshake"
+              className="w-full h-full object-contain rounded-md"
+            />
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

@@ -21,7 +21,7 @@ const Services = () => {
       id="services"
       className="min-h-screen md:h-[80vh] w-full flex flex-col justify-center items-center bg-gray-100 border-none"
     >
-      <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-10">
+      <h2 className=" text-slate-800 text-4xl font-nueu md:text-5xl lg:text-6xl font-bold mt-4 mb-10">
         What We Offer
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-8 md:gap-24 mx-5 mb-4 service-cards">
@@ -34,7 +34,7 @@ const Services = () => {
             financial services.
           </p>
         </div>
-        <div ref={cardRefs.current[1]} id="card-2" className="service-card">
+        <div ref={cardRefs.current[1]} id="card-2" className="service-card2">
           <h3 className="text-2xl font-bold mb-5">Partner Onboarding</h3>
           <p className="text-center">
             We enable lenders and partners to register and offer their services

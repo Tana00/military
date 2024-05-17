@@ -15,6 +15,8 @@ module.exports = {
          'primary-color': '#23D26B',
           'secondary-color': '#025159',
           'primary-yellow': '#e99900',
+          'black': '#000000',
+          'white': '#ffffff',
       },
       fontFamily: {
         sans: ['Duru Sans', 'sans-serif'],

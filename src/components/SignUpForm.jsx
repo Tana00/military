@@ -88,7 +88,7 @@ const SignUpForm = ({ register, handleSubmit, errors, onSubmit, password }) => {
         </label>
         <button
           type="submit"
-          className="p-2 mt-8 bg-slate-800 text-white rounded"
+          className="p-2 mt-8 bg-primary-color text-white rounded"
         >
           Sign Up
         </button>
