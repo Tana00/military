@@ -286,7 +286,7 @@ function SignUp() {
   ];
 
   return (
-    <Flex position="relative" mb="40px">
+    <Flex position="relative">
       <Flex
         h={"100vh"}
         w="100%"
