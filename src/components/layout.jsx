@@ -18,14 +18,14 @@ const DashboardLayout = (props) => {
 
   return (
     <Box>
-      <Box
-        minH="40vh"
+      {/* <Box
+        minH="10vh"
         w="100%"
         position="absolute"
-        bg={"#0b1437"}
+        bg={"#1A1A1A"}
         bgSize="cover"
         top="0"
-      />
+      /> */}
       <Sidebar
         routes={routes}
         logo={
@@ -44,6 +44,7 @@ const DashboardLayout = (props) => {
           base: "100%",
           xl: "calc(100% - 275px)",
         }}
+        // bgColor={"#1a1a1af0"}
       >
         <Portal>
           <AdminNavbar

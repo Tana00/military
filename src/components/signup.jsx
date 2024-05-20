@@ -11,7 +11,6 @@ import {
   Link,
   Checkbox,
   Text,
-  InputLeftElement,
   InputGroup,
   Select,
   Stepper,
@@ -20,9 +19,7 @@ import {
   StepStatus,
   StepIcon,
   StepNumber,
-  StepTitle,
   useSteps,
-  StepDescription,
   StepSeparator,
   useColorModeValue,
   HStack,
@@ -47,9 +44,9 @@ const Step1 = ({ setActiveStep }) => {
         w="100%"
         background="transparent"
         py="48px"
-        mt={{ md: "80px", lg: "50px" }}
+        // mt={{ base: "0px", lg: "10px" }}
       >
-        <Heading color={titleColor} fontSize="26px" mb="30px">
+        <Heading color={"#0c2b2f"} fontSize="26px" mb="30px">
           Personal Details
         </Heading>
         {/* <Text
@@ -141,7 +138,7 @@ const Step1 = ({ setActiveStep }) => {
           <Button
             fontSize="12px"
             type="submit"
-            bg={titleColor}
+            bg={"#0c2b2f"}
             w="100%"
             h="45"
             mb="20px"
@@ -168,7 +165,7 @@ const Step1 = ({ setActiveStep }) => {
           <Text color={textColor} fontWeight="medium">
             Already have an account?
             <Link
-              onClick={() => navigate("/signin")}
+              onClick={() => navigate("/auth/signin")}
               color={titleColor}
               as="span"
               ms="5px"
@@ -198,9 +195,10 @@ const Step2 = () => {
         w="100%"
         background="transparent"
         py="48px"
-        mt={{ md: "150px", lg: "80px" }}
+        mt={{ base: "20px", lg: "80px" }}
+        my={"auto"}
       >
-        <Heading color={titleColor} fontSize="26px" mb="10px">
+        <Heading color={"#0c2b2f"} fontSize="26px" mb="10px">
           Phone Number Validation
         </Heading>
         <Text
@@ -223,25 +221,27 @@ const Step2 = () => {
               <PinInputField />
             </PinInput>
           </HStack>
-          <Button
-            fontSize="12px"
-            type="submit"
-            bg={titleColor}
-            w="100%"
-            h="45"
-            mb="20px"
-            color="white"
-            mt="30px"
-            _hover={{
-              bg: "#4B5320",
-            }}
-            _active={{
-              bg: "#4B5320",
-            }}
-            onClick={() => navigate("/admin")}
-          >
-            SUBMIT
-          </Button>
+          <Link href="https://military-user.vercel.app/">
+            <Button
+              fontSize="12px"
+              type="submit"
+              bg={"#0c2b2f"}
+              w="100%"
+              h="45"
+              mb="20px"
+              color="white"
+              mt="30px"
+              _hover={{
+                bg: "#4B5320",
+              }}
+              _active={{
+                bg: "#4B5320",
+              }}
+              onClick={() => navigate("https://military-user.vercel.app/")}
+            >
+              SUBMIT
+            </Button>
+          </Link>
         </FormControl>
         <Flex
           flexDirection="column"
@@ -253,7 +253,7 @@ const Step2 = () => {
           <Text color={textColor} fontWeight="medium">
             Already have an account?
             <Link
-              onClick={() => navigate("/signin")}
+              onClick={() => navigate("/auth/signin")}
               color={titleColor}
               as="span"
               ms="5px"
@@ -295,9 +295,13 @@ function SignUp() {
         justifyContent="space-between"
         mb="30px"
         pt={{ sm: "100px", md: "0px" }}
-        // flexDirection={"column"}
+        flexDirection={{ base: "column", lg: "row" }}
       >
-        <Box my={"auto"} w={{ base: "100%", md: "50%", lg: "42%" }}>
+        <Box
+          my={{ base: "2rem", lg: "30px" }}
+          w={{ base: "90%", sm: "80%", md: "50%", lg: "42%" }}
+          mx={{ base: "auto", lg: "initial" }}
+        >
           <Stepper index={activeStep}>
             {steps.map((step, index) => (
               <Step key={index}>
@@ -320,7 +324,7 @@ function SignUp() {
           {steps[activeStep - 1].component}
         </Box>
         <Box
-          display={{ base: "none", md: "block" }}
+          display={{ base: "none", lg: "block" }}
           overflowX="hidden"
           h="100%"
           w="40vw"
@@ -328,7 +332,7 @@ function SignUp() {
           right="0px"
         >
           <Box
-            bgColor={"#0b1437"}
+            bgColor={"#0c2b2f"}
             w="100%"
             h="100%"
             position="absolute"

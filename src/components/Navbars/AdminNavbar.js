@@ -82,7 +82,7 @@ export default function AdminNavbar(props) {
     <Flex
       position={navbarPosition}
       boxShadow={navbarShadow}
-      bg={navbarBg}
+      bg={"#1A1A1A"}
       borderColor={navbarBorder}
       filter={navbarFilter}
       backdropFilter={navbarBackdrop}
@@ -111,7 +111,7 @@ export default function AdminNavbar(props) {
       }}
       pt="8px"
       top="18px"
-      w={{ sm: "calc(100vw - 30px)", xl: "calc(100vw - 75px - 275px)" }}
+      w={{ sm: "calc(100vw - 65px)", xl: "calc(100vw - 75px - 265px)" }}
     >
       <Flex
         w="100%"
@@ -119,7 +119,7 @@ export default function AdminNavbar(props) {
           sm: "column",
           md: "row",
         }}
-        alignItems={{ xl: "center" }}
+        alignItems={"center"}
       >
         <Box mb={{ sm: "8px", md: "0px" }}>
           <Link

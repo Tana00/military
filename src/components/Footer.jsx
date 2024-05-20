@@ -10,10 +10,12 @@ import {
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-10 px-5">
-      <div className="flex flex-col md:flex-row justify-between items-center mx-5">
+    <footer className="bg-[#1A1A1A] text-white py-10 px-3 md:px-5">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-4 md:items-center mx-5">
         <div className="mb-5 md:mb-0">
-          <h4 className="text-2xl font-bold mb-2">ArmedForcesLoan</h4>
+          <h4 className="text-2xl font-bold mb-2 font-nueu ">
+            ArmedForcesLoan
+          </h4>
           <p className="text-sm">
             Providing financial assistance to our heroes in their time of need.
           </p>

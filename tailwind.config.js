@@ -1,8 +1,5 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
-
 const svgToDataUri = require("mini-svg-data-uri");
 
-const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
@@ -13,9 +10,11 @@ module.exports = {
     extend: {
       colors: {
         "primary-color": "#23D26B",
-        "secondary-color": "#025159",
+        // "secondary-color": "#025159",
+        "secondary-color": "#1A1A1A",
         "primary-yellow": "#e99900",
-        // black: "#1a202c",
+        black: "#000000",
+        white: "#ffffff",
       },
       fontFamily: {
         sans: ["Duru Sans", "sans-serif"],

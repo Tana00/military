@@ -56,14 +56,14 @@ var dashRoutes = [
         layout: "/admin",
       },
       {
-        path: "/signin",
+        path: "/auth/signin",
         name: "Branches",
         icon: <DocumentIcon color="inherit" />,
         component: Dashboard,
         layout: "/admin",
       },
       {
-        path: "/signup",
+        path: "/auth/signup",
         name: "Reports",
         icon: <RocketIcon color="inherit" />,
         component: Dashboard,

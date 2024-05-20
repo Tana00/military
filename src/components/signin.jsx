@@ -31,12 +31,14 @@ function SignIn() {
         justifyContent="space-between"
         mb="30px"
         pt={{ sm: "100px", md: "0px" }}
+        flexDirection={{ base: "column", lg: "row" }}
       >
         <Flex
           alignItems="center"
           justifyContent="start"
           style={{ userSelect: "none" }}
-          w={{ base: "100%", md: "50%", lg: "42%" }}
+          w={{ base: "90%", sm: "80%", md: "50%", lg: "42%" }}
+          mx={{ base: "auto", lg: "initial" }}
         >
           <Flex
             direction="column"
@@ -94,7 +96,7 @@ function SignIn() {
               <Button
                 fontSize="12px"
                 type="submit"
-                bg={titleColor}
+                bg={"#0c2b2f"}
                 w="100%"
                 h="45"
                 mb="20px"
@@ -121,7 +123,7 @@ function SignIn() {
               <Text color={textColor} fontWeight="medium">
                 Don't have an account?
                 <Link
-                  onClick={() => navigate("/signup")}
+                  onClick={() => navigate("/auth/signup")}
                   color={titleColor}
                   as="span"
                   ms="5px"
@@ -134,7 +136,7 @@ function SignIn() {
           </Flex>
         </Flex>
         <Box
-          display={{ base: "none", md: "block" }}
+          display={{ base: "none", lg: "block" }}
           overflowX="hidden"
           h="100%"
           w="40vw"
@@ -142,7 +144,7 @@ function SignIn() {
           right="0px"
         >
           <Box
-            bgColor={"#0b1437"}
+            bgColor={"#0c2b2f"}
             w="100%"
             h="100%"
             position="absolute"

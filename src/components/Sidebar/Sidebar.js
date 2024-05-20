@@ -32,7 +32,6 @@ function Sidebar(props) {
   let variantChange = "0.2s linear";
   // verifies if routeName is the one active (in browser input)
   const activeRoute = (routeName) => {
-    console.log(location.pathname, routeName);
     return "/admin" === routeName ? "active" : "";
   };
 
@@ -187,7 +186,7 @@ function Sidebar(props) {
   var links = <>{createLinks(routes)}</>;
   //  BRAND
   //  Chakra Color Mode
-  let sidebarBg = useColorModeValue("#111c44", "navy.800");
+  let sidebarBg = useColorModeValue("#1A1A1A", "navy.800");
   let sidebarRadius = "20px";
   let sidebarMargins = "0px";
   var brand = (

@@ -13,24 +13,29 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className=" min-h-screen bg-white">
-      <div className="flex flex-col justify-center items-center">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-">
-          Contact Us
-        </h2>
-        <p className="text-center">
-          Have a question or need assistance? Reach out to us using the form
-        </p>
-      </div>
-      <div className="flex gap-2 justify-center items-center ">
+    <div
+      id="contact"
+      className="py-14 min-h-screen bg-[#0c2b2f] text-slate-200"
+    >
+      <div className="flex flex-col md:flex-row gap-2 justify-center items-start">
         <div
-          className="w-full p-10 "
+          className="w-full p-5 md:p-10 "
           style={{
             backgroundImage: "url('https://placeimg.com/640/480/tech')",
           }}
         >
-          <h2 className="text-4xl mb-5">Our Branch Office</h2>
-          <div className=" flex flex-col gap-8 mt-5 bg-white bg-opacity-90">
+          <div className="flex flex-col justify-center items-start text-left pb-14">
+            <h2 className="text-slate-200 text-4xl font-nueu md:text-5xl lg:text-6xl font-bold mt-6 mb-2">
+              Contact Us
+            </h2>
+            <p className="text-center py-2">
+              Have a question or need assistance? Reach out to us using the form
+            </p>
+          </div>
+          <h2 className="text-xl md:text-4xl mt-4 md:mt-0 mb-5">
+            Our Branch Office
+          </h2>
+          <div className=" flex flex-col gap-8 mt-5">
             <div className="flex items-center gap-4">
               <FaMap className=" text-2xl" />
               <p className="text-lg ">123 Main Street, Lagos, Nigeria</p>
@@ -47,20 +52,22 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="w-full p-10">
-          <h2 className="text-4xl mb-5">Get In Touch</h2>
+        <div className="w-full p-5 md:p-10">
+          <h2 className="text-xl md:text-4xl mt-4 md:mt-0 mb-5">
+            Get In Touch
+          </h2>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="mb-5">
               <label className="block mb-2">Name</label>
               <input
-                className="w-full p-4 border border-gray-300 rounded"
+                className="w-full px-4 py-3 border border-gray-300 rounded"
                 {...register("name", { required: "Name is required." })}
               />
               {errors.name && (
                 <p className="text-red-500">{errors.name.message}</p>
               )}
             </div>
-            <div className="mb-5">
+            {/* <div className="mb-5">
               <label className="block mb-2">Phone Number</label>
               <input
                 type="tel"
@@ -70,12 +77,12 @@ const Contact = () => {
               {errors.name && (
                 <p className="text-red-500">{errors.name.message}</p>
               )}
-            </div>
+            </div> */}
 
             <div className="mb-5">
               <label className="block mb-2">Email</label>
               <input
-                className="w-full p-4 border border-gray-300 rounded"
+                className="w-full px-4 py-3 border border-gray-300 rounded"
                 type="email"
                 {...register("email", {
                   required: "Email is required.",
@@ -100,7 +107,7 @@ const Contact = () => {
               )}
             </div>
             <button
-              className="w-full p-4 bg-black text-white rounded"
+              className="w-full p-4 bg-secondary-color text-white rounded"
               type="submit"
             >
               Submit

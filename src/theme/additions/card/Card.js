@@ -12,7 +12,7 @@ const Card = {
   },
   variants: {
     panel: () => ({
-      bg: "#111C44",
+      bg: "#0c2b2f",
     }),
   },
   defaultProps: {

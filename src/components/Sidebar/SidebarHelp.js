@@ -23,7 +23,7 @@ export function SidebarHelp(props) {
         color={textColor}
         textTransform={"uppercase"}
         fontSize={"16px"}
-        onClick={() => navigate("/signin")}
+        onClick={() => navigate("/auth/signin")}
       >
         Sign Out
       </Button>

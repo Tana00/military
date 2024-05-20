@@ -1,7 +1,6 @@
 import {
   AdobexdLogo,
   AtlassianLogo,
-  InvisionLogo,
   JiraLogo,
   SlackLogo,
   SpotifyLogo,
@@ -21,7 +20,7 @@ import { SiDropbox } from "react-icons/si";
 export const timelineData = [
   {
     logo: FaBell,
-    title: "$2400, Design changes",
+    title: "₦2400, Design changes",
     date: "22 DEC 7:20 PM",
     color: "teal.300",
   },
@@ -60,14 +59,14 @@ export const tablesProjectData = [
   {
     logo: AdobexdLogo,
     name: "Chakra UI Version",
-    budget: "$14,000",
+    budget: "₦14,000",
     status: "Working",
     progression: 60,
   },
   {
     logo: AtlassianLogo,
     name: "Add Progress Track",
-    budget: "$3,000",
+    budget: "₦3,000",
     status: "Canceled",
     progression: 10,
   },
@@ -81,14 +80,14 @@ export const tablesProjectData = [
   {
     logo: SpotifyLogo,
     name: "Launch our Mobile App",
-    budget: "$32,000",
+    budget: "₦32,000",
     status: "Done",
     progression: 100,
   },
   {
     logo: JiraLogo,
     name: "Add the New Pricing Page",
-    budget: "$400",
+    budget: "₦400",
     status: "Working",
     progression: 25,
   },
@@ -98,35 +97,35 @@ export const invoicesData = [
   {
     date: "March, 01, 2020",
     code: "#MS-415646",
-    price: "$180",
+    price: "₦180",
     logo: FaFilePdf,
     format: "PDF",
   },
   {
     date: "February, 10, 2020",
     code: "#RV-126749",
-    price: "$250",
+    price: "₦250",
     logo: FaFilePdf,
     format: "PDF",
   },
   {
     date: "April, 05, 2020",
     code: "#FB-212562",
-    price: "$560",
+    price: "₦560",
     logo: FaFilePdf,
     format: "PDF",
   },
   {
     date: "June, 25, 2019",
     code: "#QW-103578",
-    price: "$120",
+    price: "₦120",
     logo: FaFilePdf,
     format: "PDF",
   },
   {
     date: "March, 01, 2019",
     code: "#AR-803481",
-    price: "$300",
+    price: "₦300",
     logo: FaFilePdf,
     format: "PDF",
   },
@@ -157,13 +156,13 @@ export const newestTransactions = [
   {
     name: "Netflix",
     date: "27 March 2022, at 12:30 PM",
-    price: "- $2,500",
+    price: "- ₦2,500",
     logo: FaArrowDown,
   },
   {
     name: "Apple",
     date: "27 March 2022, at 12:30 PM",
-    price: "+ $2,500",
+    price: "+ ₦2,500",
     logo: FaArrowUp,
   },
 ];
@@ -172,13 +171,13 @@ export const olderTransactions = [
   {
     name: "Stripe",
     date: "26 March 2022, at 13:45 PM",
-    price: "+ $800",
+    price: "+ ₦800",
     logo: FaArrowUp,
   },
   {
     name: "HubSpot",
     date: "26 March 2022, at 12:30 PM",
-    price: "+ $1,700",
+    price: "+ ₦1,700",
     logo: FaArrowUp,
   },
   {
@@ -190,7 +189,7 @@ export const olderTransactions = [
   {
     name: "Microsoft",
     date: "25 March 2022, at 16:30 PM",
-    price: "- $987",
+    price: "- ₦987",
     logo: FaArrowDown,
   },
 ];

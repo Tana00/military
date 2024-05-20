@@ -4,15 +4,15 @@ export const stepperStyles = {
       baseStyle: {
         indicator: {
           "&[data-status=complete]": {
-            background: "#111c44",
+            background: "#0c2b2f",
             separator: {
-              bgColor: "#111c44",
-              borderColor: "#111c44",
+              bgColor: "#0c2b2f",
+              borderColor: "#0c2b2f",
             },
           },
           "&[data-status=active]": {
-            color: "#111c44",
-            borderColor: "#111c44",
+            color: "#0c2b2f",
+            borderColor: "#0c2b2f",
           },
         },
         separator: {
